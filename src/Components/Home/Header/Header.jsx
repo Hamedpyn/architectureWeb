@@ -5,6 +5,7 @@ import { VscChevronDown, VscCommentDiscussion } from "react-icons/vsc";
 import { IoSunnyOutline, IoMoonOutline, IoSearchOutline, IoHomeOutline, IoPowerOutline, IoFolderOpenOutline } from "react-icons/io5";
 import { Link, useNavigate } from "react-router-dom"
 import { memo, useCallback, useContext, useEffect, useRef, useState } from "react";
+import SideBar from "../SideBar/SideBar";
 import { HiMiniArrowRightStartOnRectangle } from "react-icons/hi2";
 import { SiAwssecretsmanager } from "react-icons/si";
 import Context from "../../../Context/Context";
@@ -291,6 +292,7 @@ export default memo(function Header() {
                     </div>
                 </div>
             </div>
+            <SideBar />
             <div ref={bodyShadow}></div>
         </>
     )
