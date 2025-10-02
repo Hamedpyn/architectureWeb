@@ -247,7 +247,7 @@ export default memo(function Header() {
                     </div>
                     <div className={`${isValue ? "flex h-[52px] items-center pointer-events-none" : "flex h-[52px] items-center"}`}>
                         <div className="lg:ml-8 h-full">
-                            <img className="h-12" src="/images/logo.webp" alt="logo" />
+                            <img className="h-12" src="/vite.svg" alt="logo" />
                         </div>
                         <ul className="hidden lg:flex gap-6">
                             <li className="group relative">

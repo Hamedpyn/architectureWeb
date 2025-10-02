@@ -86,7 +86,7 @@ export default function SideBar() {
                             {/* : <IoMoonOutline className=" text-2xl" />} */}
                         </button>
                     </div>
-                    <img src="/images/logo.webp" className="h-12" alt="logo" />
+                    <img src="/vite.svg" className="h-12" alt="logo" />
                 </div>
                 <div className="mt-6">
                     <button className="flex bg-[#F3F4F6] dark:bg-[#2F3542] h-12 rounded-full items-center  justify-evenly w-56 flex-row-reverse cursor-auto">

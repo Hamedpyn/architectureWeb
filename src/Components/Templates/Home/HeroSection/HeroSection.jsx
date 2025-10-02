@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 
 function HeroSection() {
     return (
-        <div className="max-w-[1400px] mt-5">
+        <div className="mt-5">
             <div className="flex flex-col-reverse gap-5 lg:flex-row items-center bg-white m-4 p-3 sm:p-7 sm:m-10 lg:p-14 rounded-3xl">
                 <div className="basis-1/2 flex flex-col items-center lg:items-start gap-5">
                     {/* Heading and Typewriter */}
