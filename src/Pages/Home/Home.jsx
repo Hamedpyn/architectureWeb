@@ -1,5 +1,5 @@
-import Header from "../../Components/Home/Header/Header";
-import HeroSection from "../../Components/Home/HeroSection/HeroSection";
+import Header from "../../Components/Modules/Header/Header"
+import HeroSection from "../../Components/Templates/Home/HeroSection/HeroSection"
 
 function Home() {
   return (
