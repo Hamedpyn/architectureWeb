@@ -1,4 +1,5 @@
 import Header from "../../Components/Modules/Header/Header"
+import Footer from "../../Components/Modules/Footer/Footer"
 import HeroSection from "../../Components/Templates/Home/HeroSection/HeroSection"
 import LatestNews from "../../Components/Templates/Home/LatestNews/LatestNews";
 import LatestCourses from "../../Components/Templates/Home/LatestCourses/LatestCourses";
@@ -14,6 +15,7 @@ function Home() {
         <LatestArticles />
         <LatestNews />
       </div>
+      <Footer />
     </>
   )
 }
