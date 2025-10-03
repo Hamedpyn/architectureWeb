@@ -3,6 +3,7 @@ import './App.css'
 import routes from "./routes"
 import Context from "./Context/Context"
 import { useState } from 'react'
+import 'ckeditor5/ckeditor5.css';
 
 function App() {
   const [isSideBar, setIsSideBar] = useState(false)
