@@ -127,7 +127,7 @@ export default memo(function Header() {
                 <div className="h-[84px] md:h-[6.25rem] flex flex-row-reverse items-center justify-between px-4 mx-auto lg:px-12">
                     <div className="flex flex-row-reverse relative gap-5 h-full items-center">
                         {/* User Account */}
-                        {isLogin ? (
+                        {!isLogin ? (
                             <>
                                 <button onClick={(e) => {
                                     e.stopPropagation()

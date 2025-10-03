@@ -40,7 +40,7 @@ export default memo(function ArticlesBox({ isNews }) {
           </div>
         </div>
         <div className="flex justify-center mt-4">
-          <Link to={`/blog`} className="flex transition-colors dark:text-white text-gray-900 hover:text-[#0f6b68] items-center justify-center">
+          <Link to={`/blog`} className="flex transition-colors dark:text-white text-[#0f6b68] items-center justify-center">
 
             <span className="dana-regular flex items-center gap-1">
               <span className="h-4 text-base">مطالعه {isNews ? "خبر" : "مقاله"}</span>
