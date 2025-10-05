@@ -9,7 +9,7 @@ export default memo(function CourseBox() {
     <>
       <div className="flex flex-col sm:h-[400px] bg-white dark:bg-[#242A38] border-none overflow-hidden rounded-2xl z-0">
         <div className="h-[182px] relative overflow-hidden">
-          <Link to={`/course/`}>
+          <Link to={`/Course/1`}>
             <img className='w-full h-44 object-cover rounded-2xl'
               src={"/images/test.webp"}
               alt={'No image available'}
