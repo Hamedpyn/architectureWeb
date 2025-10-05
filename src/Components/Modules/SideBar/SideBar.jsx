@@ -10,7 +10,6 @@ export default function SideBar() {
     let { isSideBar, setIsSideBar } = useContext(Context)
     const [, setWidth] = useState(window.innerWidth);
     const [searchValue, setSearchValue] = useState('');
-    const [isPhp, setIsPhp] = useState(false)
     const [isArticles, setIsArticles] = useState(false)
     let bodyShadow = useRef(null)
     let navigate = useNavigate()
@@ -103,55 +102,22 @@ export default function SideBar() {
                     <ul className="flex flex-col gap-5 mt-7">
                         <li className="dana-regular group text-gray-900 dark:text-white w-full">
                             <span className="dana-regular flex items-center justify-between h-full group-hover:text-[#159995] transition-colors">
-                                <Link to={'/course-cat/php'}>پی اچ پی</Link>
-                                {isPhp ? <VscChevronDown onClick={() => setIsPhp(prev => !prev)} className="text-lg mb-1" /> : <VscChevronLeft onClick={() => setIsPhp(prev => !prev)} className="text-lg mb-1" />}
+                                <Link to={'/course-cat/php'}>صفحه اصلی</Link>
                             </span>
-                            <div className={`pt-4 transition-all cursor-auto ${isPhp ? "opacity-100 visible" : "opacity-0 invisible hidden"}`}>
-                                <ul className="bg-[#f3f4f6] dark:bg-[#111827] rounded-xl p-5 flex flex-col gap-5">
-                                    <li className="cursor-pointer">
-                                        <span className="w-full flex dana-regular hover:text-[#159995] transition-all text-gray-900 dark:text-white text-sm">آموزش جامع PHP</span>
-                                    </li>
-                                    <li className="cursor-pointer">
-                                        <span className="w-full flex dana-regular hover:text-[#159995] transition-all text-gray-900 dark:text-white text-sm">ربات تلگرام با PHP</span>
-                                    </li>
-                                    <li className="cursor-pointer">
-                                        <span className="w-full flex dana-regular hover:text-[#159995] transition-all text-gray-900 dark:text-white text-sm">پروژه های کاربردی با PHP</span>
-                                    </li>
-                                </ul>
-                            </div>
+                            
                         </li>
 
                         <li className="dana-regular group text-gray-900 dark:text-white w-full">
                             <span className="dana-regular flex items-center justify-between h-full group-hover:text-[#159995] transition-colors">
-                                <Link to={'/blog'}>مقالات</Link>
+                                <Link to={'/courses'}>دوره ها</Link>
                                 {isArticles ? <VscChevronDown onClick={() => setIsArticles(prev => !prev)} className="text-lg mb-1" /> : <VscChevronLeft onClick={() => setIsArticles(prev => !prev)} className="text-lg mb-1" />}
                             </span>
                             <div className={`pt-4 transition-all cursor-auto ${isArticles ? "opacity-100 visible" : "opacity-0 invisible hidden"}`}>
                                 <ul className="bg-[#f3f4f6] dark:bg-[#111827] rounded-xl p-5 flex flex-col gap-5">
                                     <li className="cursor-pointer">
-                                        <span className="w-full flex dana-regular hover:text-[#159995] transition-all text-gray-900 dark:text-white text-sm">اچ تی ام ال</span>
+                                        <span className="w-full flex dana-regular hover:text-[#159995] transition-all text-gray-900 dark:text-white text-sm">دوره x</span>
                                     </li>
-                                    <li className="cursor-pointer">
-                                        <span className="w-full flex dana-regular hover:text-[#159995] transition-all text-gray-900 dark:text-white text-sm">بوت استرپ</span>
-                                    </li>
-                                    <li className="cursor-pointer">
-                                        <span className="w-full flex dana-regular hover:text-[#159995] transition-all text-gray-900 dark:text-white text-sm">تست نفوذ و امنیت وب</span>
-                                    </li>
-                                    <li className="cursor-pointer">
-                                        <span className="w-full flex dana-regular hover:text-[#159995] transition-all text-gray-900 dark:text-white text-sm">جی کوئری</span>
-                                    </li>
-                                    <li className="cursor-pointer">
-                                        <span className="w-full flex dana-regular hover:text-[#159995] transition-all text-gray-900 dark:text-white text-sm">ری اکت جی اس</span>
-                                    </li>
-                                    <li className="cursor-pointer">
-                                        <span className="w-full flex dana-regular hover:text-[#159995] transition-all text-gray-900 dark:text-white text-sm">سی اس اس</span>
-                                    </li>
-                                    <li className="cursor-pointer">
-                                        <span className="w-full flex dana-regular hover:text-[#159995] transition-all text-gray-900 dark:text-white text-sm">طراحی سایت</span>
-                                    </li>
-                                    <li className="cursor-pointer">
-                                        <span className="w-full flex dana-regular hover:text-[#159995] transition-all text-gray-900 dark:text-white text-sm">ویو جی اس</span>
-                                    </li>
+                                    
                                 </ul>
                             </div>
                         </li>

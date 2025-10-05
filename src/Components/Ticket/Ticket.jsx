@@ -14,8 +14,8 @@ export default function Ticket() {
                     ۱۴۰۴ مهر ۱۰, سه‌شنبه
                 </span>
                 {/* {tickets.answer ?  */}
-                <IoIosCheckmarkCircleOutline className="text-[#22c55e] text-2xl" />
-                 {/* :  */}
+                <IoIosCheckmarkCircleOutline className="text-[#0f6b68] text-2xl" />
+                {/* :  */}
                 {/* <GoInfo className="text-amber-500 text-2xl" />} */}
 
             </div>

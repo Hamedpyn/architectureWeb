@@ -132,10 +132,10 @@ export default memo(function Header() {
                                 <button onClick={(e) => {
                                     e.stopPropagation()
                                     setOpenUserMenu(prev => !prev)
-                                }} className="bg-[#f3f4f6] relative dark:bg-[#2F3542] h-[52px] rounded-full w-[52px] flex items-center justify-center">
+                                }} className={`bg-[#f3f4f6] relative dark:bg-[#2F3542] h-[52px] rounded-full w-[52px] flex items-center justify-center  ${openUserMenu && "z-50"}`}>
                                     <CiUser className="dark:text-white text-gray-900 text-2xl" />
                                 </button>
-                                {<div ref={userMenu} className={`bg-white w-[278px] rounded-xl z-50 dark:bg-[#242a38] absolute top-full ${openUserMenu ? "flex" : "hidden"}`}>
+                                {<div ref={userMenu} className={`bg-white w-[278px] rounded-xl dark:bg-[#242a38] absolute top-full ${openUserMenu ? "flex z-50" : "hidden"}`}>
                                     <div className="p-4 flex flex-col w-full justify-start">
                                         <div className="flex w-full pb-3 items-center gap-5 border-b border-b-neutral-200 dark:border-b-white/10">
                                             <img className="w-14 rounded-full" src={"/images/ba986f5ecace8be41dfdf99d3000078f.png"} alt="user Image" />
@@ -251,30 +251,22 @@ export default memo(function Header() {
                         </div>
                         <ul className="hidden lg:flex gap-6">
                             <li className="group relative">
-                                <Link to={'/course-cat/frontend'} className="dana-regular flex items-center gap-x-1 dark:text-white text-gray-900 h-full group-hover:text-[#159995] !transition-colors">
-                                    فرانت اند
+                                <Link to={'/'} className="dana-regular flex items-center gap-x-1 dark:text-white text-gray-900 h-full group-hover:text-[#159995] !transition-colors">
+                                    صفحه اصلی
                                     <VscChevronDown style={{ all: "unset" }} className="!text-lg  dark:!fill-white !fill-gray-900 group-hover:!fill-[#0f6b68] !transition-colors  " />
                                 </Link>
-                                <div className="z-50 invisible opacity-0 absolute top-full pt-4 xl:pt-8 right-0 group-hover:visible group-hover:opacity-100 transition-all w-64 cursor-auto">
-                                    <ul className="bg-white dark:bg-[#242A38] rounded border-y border-[#0f6b68] p-5 flex flex-col gap-5">
-                                        <li className="cursor-pointer">
-                                            <span className="w-full flex dana-regular hover:text-[#159995] transition-all dark:text-white text-gray-900 text-[16px]">آموزش HTML</span>
-                                        </li>
-
-                                    </ul>
-                                </div>
                             </li>
 
                             <li className="group relative">
-                                <Link to={'/blog'} className="dana-regular gap-1 flex items-center dark:text-white text-gray-900 h-full group-hover:text-[#159995]  transition-colors">
-                                    مقالات
+                                <Link to={'/Courses'} className="dana-regular gap-1 flex items-center dark:text-white text-gray-900 h-full group-hover:text-[#159995]  transition-colors">
+                                    دوره ها
                                     <VscChevronDown style={{ all: "unset" }} className="!text-lg dark:!fill-white !fill-gray-900 group-hover:!fill-[#0f6b68] !transition-colors  " />
                                 </Link>
                                 <div className="z-50 invisible opacity-0 absolute xl:pt-8  top-full pt-4 right-0 group-hover:visible group-hover:opacity-100 transition-all w-64 cursor-auto">
                                     <ul className="bg-white dark:bg-[#242A38] rounded border-y border-[#0f6b68] p-5 flex flex-col gap-5">
                                         <li className="cursor-pointer">
                                             <span className="w-full flex dana-regular hover:text-[#159995] transition-all dark:text-white text-gray-900 text-[16px]">
-                                                اچ تی ام ال											</span>
+                                                دوره x									</span>
                                         </li>
 
                                     </ul>
