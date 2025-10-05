@@ -1,4 +1,5 @@
 import Home from "./Pages/Home/Home"
+import PageCourses from "./Pages/Courses/Courses"
 
 import CMS from "./Pages/CMS/CMS";
 import Users from "./Pages/CMS/Users/Users";
@@ -18,6 +19,7 @@ import EditAccount from "./Pages/userAccount/EditAccount/EditAccount";
 
 const routes = [
     { path: "/", element: <Home /> },
+    { path: "/Courses", element: <PageCourses /> },
     {
         path: "/CMS/*", element: <CMS />
         , children: [

@@ -7,7 +7,7 @@ export default function LatestCourses() {
     <div className="px-2">
       <SectionsTitle
         title={"آخرین اخبار"}
-        path={'/courses/'}
+        path={'/Courses/'}
         text={'خبر های مهم معماری'}
         buttonText={"اخبار"}
         alert={"bg-[#159995]"}

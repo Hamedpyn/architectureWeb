@@ -7,7 +7,7 @@ export default function LatestCourses() {
     <div className=" px-2">
       <SectionsTitle
         title={"وبلاگ آموزشی ما"}
-        path={'/courses/'}
+        path={'/Courses/'}
         text={'مقالات بروز معماری'}
         buttonText={"مقالات"}
         alert={"bg-[#159995]"}
