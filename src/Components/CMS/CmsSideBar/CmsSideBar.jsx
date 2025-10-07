@@ -1,18 +1,20 @@
-import { useCallback, useEffect, useRef } from "react"
+import { useCallback, useContext, useEffect, useRef } from "react"
 import { IoMdClose } from "react-icons/io";
-import { IoHomeOutline, IoSunnyOutline } from "react-icons/io5";
-import { NavLink,Link, useLocation } from "react-router-dom";
+import { IoHomeOutline, IoMoonOutline, IoSunnyOutline } from "react-icons/io5";
+import { NavLink, Link, useLocation } from "react-router-dom";
 import { AiOutlineProduct } from "react-icons/ai";
 import { PiArticleNyTimes } from "react-icons/pi";
 import { LuUsers } from "react-icons/lu";
 import { HiMiniArrowRightStartOnRectangle } from "react-icons/hi2";
 import { VscCommentDiscussion } from "react-icons/vsc";
+import Context from "../../../Context/Context";
 
 export default function CmsSideBar({ isCmsSideBar, setIsCmsSideBar }) {
   let bodyShadow = useRef(null)
   let userMenu = useRef(null)
   const { pathname } = useLocation();
 
+  const { darkMode, setDarkMode } = useContext(Context)
 
   const links = [
     { to: '', icon: <IoHomeOutline />, label: 'صفحه اصلی' },
@@ -76,10 +78,11 @@ export default function CmsSideBar({ isCmsSideBar, setIsCmsSideBar }) {
               <IoMdClose className=" text-2xl" />
             </button>
             {/* Light and Dark */}
-            <button
+            <button onClick={() => {
+              setDarkMode(!darkMode)
+            }} className="hidden lg:flex bg-[#f3f4f6] dark:bg-[#2F3542] h-[52px] rounded-full w-[52px] items-center justify-center">
 
-              className="flex text-gray-900 dark:text-white bg-[#F3F4F6] dark:bg-[#2F3542] h-[48px] rounded-full w-[48px] items-center justify-center">
-              <IoSunnyOutline className=" text-2xl dark:text-white text-gray-900" />
+              {darkMode ? <IoSunnyOutline className=" text-2xl dark:text-white text-gray-900" /> : <IoMoonOutline className=" text-2xl dark:text-white text-gray-900" />}
             </button>
           </div>
           <img src="/vite.svg" className="h-12" alt="logo" />

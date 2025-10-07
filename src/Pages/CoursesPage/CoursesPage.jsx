@@ -101,7 +101,7 @@ export default function CoursesPage() {
                             </div>
                         </div>
                         <BoxesTitle bg={"bg-amber-500"} title={"توضیحات"} icon={<IoDocumentText className="hidden md:inline-block text-amber-400 w-10 h-10" />}>
-                            <p className="dana-regular leading-7 text-black opacity-70">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio iure saepe voluptatum rerum accusantium sint maiores! Ipsa consequatur voluptatum sint dolore reiciendis ullam ipsam enim quidem necessitatibus, odit repellat id!</p>
+                            <p className="dana-regular leading-7 text-black dark:text-white opacity-70">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio iure saepe voluptatum rerum accusantium sint maiores! Ipsa consequatur voluptatum sint dolore reiciendis ullam ipsam enim quidem necessitatibus, odit repellat id!</p>
                             <img className="rounded-2xl"
                                 src={"/images/test.webp"}
                                 alt={"test image"}

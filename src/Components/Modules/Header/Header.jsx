@@ -11,7 +11,7 @@ import { SiAwssecretsmanager } from "react-icons/si";
 import Context from "../../../Context/Context";
 
 export default memo(function Header() {
-    let { setIsSideBar, setIsValue, isValue, openUserMenu, setOpenUserMenu } = useContext(Context);
+    let { setIsSideBar, setIsValue, isValue, openUserMenu, setOpenUserMenu,darkMode,setDarkMode } = useContext(Context);
     const [searchValue, setSearchValue] = useState('');
     const [isLogin,] = useState(false);
 
@@ -123,7 +123,7 @@ export default memo(function Header() {
     return (
 
         <>
-            <div className="w-full LoginPage bg-white">
+            <div className="w-full LoginPage bg-white dark:bg-[#242A38]">
                 <div className="h-[84px] md:h-[6.25rem] flex flex-row-reverse items-center justify-between px-4 mx-auto lg:px-12">
                     <div className="flex flex-row-reverse relative gap-5 h-full items-center">
                         {/* User Account */}
@@ -198,15 +198,15 @@ export default memo(function Header() {
                         )}
 
                         {/* User Basket */}
-                        <button className="bg-[#f3f4f6] h-[52px] rounded-full w-[52px] flex items-center justify-center">
-                            <AiOutlineShopping className=" text-2xl text-gray-900" />
+                        <button className="bg-[#f3f4f6] dark:bg-[#2F3542] h-[52px] rounded-full w-[52px] flex items-center justify-center">
+                            <AiOutlineShopping className=" text-2xl dark:text-white text-gray-900" />
                         </button>
                         {/* Light and Dark */}
-                        <button className="hidden lg:flex bg-[#f3f4f6] dark:bg-[#2F3542] h-[52px] rounded-full w-[52px] items-center justify-center">
+                        <button onClick={() => {
+                            setDarkMode(!darkMode)
+                        }} className="hidden lg:flex bg-[#f3f4f6] dark:bg-[#2F3542] h-[52px] rounded-full w-[52px] items-center justify-center">
 
-                            {/* {darkMode ?  */}
-                            <IoSunnyOutline className=" text-2xl dark:text-white text-gray-900" />
-                            {/* : <IoMoonOutline className=" text-2xl dark:text-white text-gray-900" />} */}
+                            {darkMode ? <IoSunnyOutline className=" text-2xl dark:text-white text-gray-900" /> : <IoMoonOutline className=" text-2xl dark:text-white text-gray-900" />}
                         </button>
                         {/* Search Bar */}
                         <div ref={searchBarRef} className="hidden relative lg:flex h-full items-center">
@@ -253,7 +253,6 @@ export default memo(function Header() {
                             <li className="group relative">
                                 <Link to={'/'} className="dana-regular flex items-center gap-x-1 dark:text-white text-gray-900 h-full group-hover:text-[#159995] !transition-colors">
                                     صفحه اصلی
-                                    <VscChevronDown style={{ all: "unset" }} className="!text-lg  dark:!fill-white !fill-gray-900 group-hover:!fill-[#0f6b68] !transition-colors  " />
                                 </Link>
                             </li>
 
@@ -278,7 +277,7 @@ export default memo(function Header() {
                         <button onClick={(e) => {
                             setIsSideBar(prev => !prev)
                             e.stopPropagation()
-                        }} className="bg-[#f3f4f6] menu-button cursor-pointer h-[52px] rounded-full w-[52px] flex items-center justify-center">
+                        }} className="bg-[#f3f4f6] dark:bg-[#2F3542] menu-button cursor-pointer h-[52px] rounded-full w-[52px] flex items-center justify-center">
                             <IoIosMenu className="text-2xl text-gray-900 dark:text-white" />
                         </button>
                     </div>

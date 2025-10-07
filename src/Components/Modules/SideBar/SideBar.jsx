@@ -7,7 +7,7 @@ import { Link, useNavigate } from "react-router-dom";
 import Context from "../../../Context/Context";
 
 export default function SideBar() {
-    let { isSideBar, setIsSideBar } = useContext(Context)
+    let { isSideBar, setIsSideBar, darkMode, setDarkMode } = useContext(Context)
     const [, setWidth] = useState(window.innerWidth);
     const [searchValue, setSearchValue] = useState('');
     const [isArticles, setIsArticles] = useState(false)
@@ -77,12 +77,11 @@ export default function SideBar() {
                             <IoMdClose className=" text-2xl" />
                         </button>
                         {/* Light and Dark */}
-                        <button
+                        <button onClick={() => {
+                            setDarkMode(!darkMode)
+                        }} className="flex bg-[#f3f4f6] dark:bg-[#2F3542] h-[52px] rounded-full w-[52px] items-center justify-center">
 
-                            className="flex text-gray-900 dark:text-white bg-[#F3F4F6] dark:bg-[#2F3542] h-[48px] rounded-full w-[48px] items-center justify-center">
-                            {/* {darkMode ?  */}
-                            <IoSunnyOutline className=" text-2xl" />
-                            {/* : <IoMoonOutline className=" text-2xl" />} */}
+                            {darkMode ? <IoSunnyOutline className=" text-2xl dark:text-white text-gray-900" /> : <IoMoonOutline className=" text-2xl dark:text-white text-gray-900" />}
                         </button>
                     </div>
                     <img src="/vite.svg" className="h-12" alt="logo" />
@@ -104,7 +103,7 @@ export default function SideBar() {
                             <span className="dana-regular flex items-center justify-between h-full group-hover:text-[#159995] transition-colors">
                                 <Link to={'/course-cat/php'}>صفحه اصلی</Link>
                             </span>
-                            
+
                         </li>
 
                         <li className="dana-regular group text-gray-900 dark:text-white w-full">
@@ -117,7 +116,7 @@ export default function SideBar() {
                                     <li className="cursor-pointer">
                                         <span className="w-full flex dana-regular hover:text-[#159995] transition-all text-gray-900 dark:text-white text-sm">دوره x</span>
                                     </li>
-                                    
+
                                 </ul>
                             </div>
                         </li>

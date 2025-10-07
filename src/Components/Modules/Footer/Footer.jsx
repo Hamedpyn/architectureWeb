@@ -6,7 +6,7 @@ export default function Footer() {
 
         <footer className="mt-24 LoginPage sm:mt-40 w-full bg-white dark:bg-[#242A38] py-8 md:pt-16 md:pb-10">
             <div className="slide mx-auto max-w-[1400px]">
-                <div className="pb-5 mb-5 sm:pb-8 sm:mb-8 border-b border-b-white/10">
+                <div className="pb-5 mb-5 sm:pb-8 sm:mb-8">
                     <div className="flex items-center justify-between">
                         <Link to="/" title="سبز لرن" className="flex items-center gap-x-2">
                             <img src="/vite.svg" className="h-8 sm:h-12" alt="سبز لرن" loading="lazy" />
@@ -69,7 +69,7 @@ export default function Footer() {
                         <img src="/images/enamad.png" className="w-36 sm:w-auto" alt="eNemad" />
                     </a>
                 </div>
-                <div className="flex items-center border-t pt-4 justify-center text-center dana-regular sm:text-right sm:justify-between flex-wrap gap-y-2 gap-x-4 mt-8 sm:mt-10 text-[#333c4c] dark:text-neutral-300">
+                <div className="flex items-center border-t dark:border-t-white/10 pt-4 justify-center text-center dana-regular sm:text-right sm:justify-between flex-wrap gap-y-2 gap-x-4 mt-8 sm:mt-10 text-[#333c4c] dark:text-neutral-300">
                     <span>کلیه حقوق مادی و معنوی سایت برای آکادمی x محفوظ است.</span>
                     <span>ساخته شده با ❤️ توسط x</span>
                 </div>

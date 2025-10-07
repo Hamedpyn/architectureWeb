@@ -1,16 +1,19 @@
-import { useCallback, useEffect, useRef } from "react"
-import { NavLink, useLocation } from "react-router-dom";
+import { useCallback, useContext, useEffect, useRef } from "react"
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { IoMdClose } from "react-icons/io";
-import { IoChevronBackSharp, IoSunnyOutline, IoWalletOutline } from "react-icons/io5";
+import { IoChevronBackSharp, IoMoonOutline, IoSunnyOutline, IoWalletOutline } from "react-icons/io5";
 import { HiMiniArrowRightStartOnRectangle } from "react-icons/hi2";
 import { PiGraduationCap, PiSquaresFour } from "react-icons/pi";
 import { VscCommentDiscussion } from "react-icons/vsc";
 import { RiQuestionLine } from "react-icons/ri"; import { FiEdit } from "react-icons/fi";
+import Context from "../../Context/Context";
 
 export default function UserPanelSideBar({ isCmsSideBar, setIsCmsSideBar }) {
     let bodyShadow = useRef(null)
     let userMenu = useRef(null)
     const { pathname } = useLocation();
+    const { darkMode, setDarkMode } = useContext(Context)
+
 
     const links = [
         { id: 1, to: '', icon: <PiSquaresFour />, label: 'پنل کاربری' },
@@ -74,10 +77,11 @@ export default function UserPanelSideBar({ isCmsSideBar, setIsCmsSideBar }) {
                             <IoMdClose className=" text-2xl" />
                         </button>
                         {/* Light and Dark */}
-                        <button
+                        <button onClick={() => {
+                            setDarkMode(!darkMode)
+                        }} className="flex bg-[#f3f4f6] dark:bg-[#2F3542] h-[52px] rounded-full w-[52px] items-center justify-center">
 
-                            className="flex text-gray-900 dark:text-white bg-[#F3F4F6] dark:bg-[#2F3542] h-[48px] rounded-full w-[48px] items-center justify-center">
-                            <IoSunnyOutline className=" text-2xl dark:text-white text-gray-900" />
+                            {darkMode ? <IoSunnyOutline className=" text-2xl dark:text-white text-gray-900" /> : <IoMoonOutline className=" text-2xl dark:text-white text-gray-900" />}
                         </button>
                     </div>
                     <img src="/vite.svg" className="h-12" alt="logo" />
@@ -115,10 +119,10 @@ export default function UserPanelSideBar({ isCmsSideBar, setIsCmsSideBar }) {
                             ))}
                         </ul>
                     </div>
-                    <button className="dark:bg-[#333C4C] bg-[#F3F4F6] rounded text-gray-900 dark:text-gray-400 dana-regular flex justify-between p-3">
+                    <Link to={"/"} className="dark:bg-[#333C4C] bg-[#F3F4F6] rounded text-gray-900 dark:text-gray-400 dana-regular flex justify-between p-3">
                         <span>خروج از حساب کاربری</span>
                         <HiMiniArrowRightStartOnRectangle className="text-2xl" />
-                    </button>
+                    </Link>
                 </div>
 
             </div>

@@ -1,8 +1,11 @@
+import { useContext } from "react";
 import { IoIosMenu } from "react-icons/io";
-import { IoSunnyOutline } from "react-icons/io5";
+import { IoMoonOutline, IoSunnyOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
+import Context from "../../../Context/Context";
 
-export default function TopBar({ isUser,setIsCmsSideBar }) {
+export default function TopBar({ isUser, setIsCmsSideBar }) {
+    const { darkMode, setDarkMode } = useContext(Context)
 
     return (
         <div className="w-full mb-10">
@@ -21,11 +24,13 @@ export default function TopBar({ isUser,setIsCmsSideBar }) {
                     </Link>
                 </div>
                 <div className="hidden md:flex lg:flex-wrap lg:justify-between lg:w-full items-center gap-2">
-                    <button className="lg:flex hidden border border-neutral-300 dark:border-white/10 h-[52px] rounded-full w-[52px] items-center justify-center">
-                        <IoSunnyOutline className=" text-2xl dark:text-white text-gray-900" />
+                    <button onClick={() => {
+                        setDarkMode(!darkMode)
+                    }} className={`hidden lg:flex ${isUser ? "bg-[#f3f4f6]":"bg-[#fff]"} dark:bg-[#2F3542] h-[52px] rounded-full w-[52px] items-center justify-center`}>
+                        {darkMode ? <IoSunnyOutline className=" text-2xl dark:text-white text-gray-900" /> : <IoMoonOutline className=" text-2xl dark:text-white text-gray-900" />}
                     </button>
                     <div className="hidden lg:inline-block">
-                        <Link to={'/'} className="flex items-center gap-x-2 xl:pl-6 xl:ml-6 text-black dana-demi text-2xl">
+                        <Link to={'/'} className="flex items-center gap-x-2 xl:pl-6 xl:ml-6 dark:text-white text-black dana-demi text-2xl">
                             آکادمی معماری
                         </Link>
                     </div>

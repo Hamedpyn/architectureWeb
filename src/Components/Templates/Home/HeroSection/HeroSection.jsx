@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 function HeroSection() {
     return (
         <div className="mt-5">
-            <div className="flex flex-col-reverse gap-5 lg:flex-row items-center bg-white m-4 p-3 sm:p-7 sm:m-10 lg:p-14 rounded-3xl">
+            <div className="flex flex-col-reverse gap-5 lg:flex-row items-center bg-white m-4 p-3 sm:p-7 sm:m-10 lg:p-14 rounded-3xl dark:bg-[#242A38]">
                 <div className="basis-1/2 flex flex-col items-center lg:items-start gap-5">
                     {/* Heading and Typewriter */}
                     <div className="flex flex-col gap-10 items-center lg:items-start">

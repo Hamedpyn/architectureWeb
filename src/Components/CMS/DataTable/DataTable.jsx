@@ -29,7 +29,7 @@ export default function DataTable({ tableTitles, name }) {
                                 {tableTitles.map((item, idx) => (
                                     <td
                                         key={idx}
-                                        className="px-2 text-black sm:px-4 py-2 dana-medium"
+                                        className="px-2 dark:text-white text-black sm:px-4 py-2 dana-medium"
                                         style={{ width: `${100 / tableTitles.length}%` }}
                                     >
                                         تست
