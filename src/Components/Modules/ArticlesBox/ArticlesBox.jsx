@@ -17,7 +17,7 @@ export default memo(function ArticlesBox({ isNews }) {
       </div>
       <div className="flex-grow px-5 py-3">
         <h3 className="dana-demi dark:text-white text-gray-900 line-clamp-2 mb-3">
-          <Link to={`/blog`} >عنوان {isNews ? "خبر" : "مقاله"}</Link>
+          <Link to={`/`} >عنوان {isNews ? "خبر" : "مقاله"}</Link>
         </h3>
         <p className="text-sm line-clamp-4 dana-regular text-gray-900/70 dark:text-white/70">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis deserunt illum inventore quia?</p>
       </div>
@@ -40,7 +40,7 @@ export default memo(function ArticlesBox({ isNews }) {
           </div>
         </div>
         <div className="flex justify-center mt-4">
-          <Link to={`/blog`} className="flex transition-colors dark:text-white text-[#0f6b68] items-center justify-center">
+          <Link to={`/`} className="flex transition-colors dark:text-white text-[#0f6b68] items-center justify-center">
 
             <span className="dana-regular flex items-center gap-1">
               <span className="h-4 text-base">مطالعه {isNews ? "خبر" : "مقاله"}</span>
