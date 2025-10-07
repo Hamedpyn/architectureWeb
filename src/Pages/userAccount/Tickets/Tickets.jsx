@@ -1,7 +1,7 @@
 import { CiCirclePlus } from "react-icons/ci";
-import UserPanelTitle from "../../../Components/UserPanelTitle/UserPanelTitle";
+import UserPanelTitle from "../../../Components/Templates/UserPanel/UserPanelTitle/UserPanelTitle";
 import { Link } from "react-router-dom";
-import Ticket from "../../../Components/Ticket/Ticket";
+import Ticket from "../../../Components/Templates/UserPanel/Ticket/Ticket";
 
 export default function Tickets() {
   const links = [

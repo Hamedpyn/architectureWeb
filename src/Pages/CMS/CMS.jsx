@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import { Outlet } from "react-router-dom";
-import CmsSideBar from "../../Components/CMS/CmsSideBar/CmsSideBar";
-import TopBar from "../../Components/CMS/TopBar/TopBar";
+import CmsSideBar from "../../Components/Templates/CMS/CmsSideBar/CmsSideBar";
+import TopBar from "../../Components/Templates/CMS/TopBar/TopBar";
 import Context from "../../Context/Context"
 
 export default function CMS() {

@@ -1,4 +1,4 @@
-import UserPanelTitle from '../../../Components/UserPanelTitle/UserPanelTitle'
+import UserPanelTitle from '../../../Components/Templates/UserPanel/UserPanelTitle/UserPanelTitle'
 import CourseBox from '../../../Components/Modules/CourseBox/CourseBox'
 
 export default function Courses() {

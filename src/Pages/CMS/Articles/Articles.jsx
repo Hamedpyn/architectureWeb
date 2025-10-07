@@ -1,5 +1,5 @@
 import { useState } from "react"
-import DataTable from "../../../Components/CMS/DataTable/DataTable"
+import DataTable from "../../../Components/Templates/CMS/DataTable/DataTable"
 import { MdOutlineShortText, MdTitle } from "react-icons/md"
 import { TbFileDescription } from "react-icons/tb"
 import { FaChevronDown } from "react-icons/fa"

@@ -1,6 +1,6 @@
-import UserPanelTitle from "../../../Components/UserPanelTitle/UserPanelTitle";
+import UserPanelTitle from "../../../Components/Templates/UserPanel/UserPanelTitle/UserPanelTitle";
 import CourseBox from "../../../Components/Modules/CourseBox/CourseBox";
-import Ticket from "../../../Components/Ticket/Ticket";
+import Ticket from "../../../Components/Templates/UserPanel/Ticket/Ticket";
 
 export default function UserIndex() {
 

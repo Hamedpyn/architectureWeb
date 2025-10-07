@@ -1,4 +1,4 @@
-import DataTable from '../../../Components/CMS/DataTable/DataTable'
+import DataTable from '../../../Components/Templates/CMS/DataTable/DataTable'
 import { BsCoin } from "react-icons/bs";
 import { TbFileDescription } from "react-icons/tb";
 import { MdOutlineShortText, MdTitle } from 'react-icons/md'

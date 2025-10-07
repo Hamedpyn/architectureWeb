@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
-import UserPanelSideBar from "../../Components/UserPanelSideBar/UserPanelSideBar";
+import UserPanelSideBar from "../../Components/Templates/UserPanel/UserPanelSideBar/UserPanelSideBar";
 import { useContext, useEffect, useState } from "react";
-import TopBar from "../../Components/CMS/TopBar/TopBar";
+import TopBar from "../../Components/Templates/CMS/TopBar/TopBar";
 import Context from "../../Context/Context";
 
 export default function UserAccount() {

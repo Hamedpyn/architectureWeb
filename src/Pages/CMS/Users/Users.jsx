@@ -1,4 +1,4 @@
-import DataTable from "../../../Components/CMS/DataTable/DataTable";
+import DataTable from "../../../Components/Templates/CMS/DataTable/DataTable";
 import { CiUser } from "react-icons/ci";
 import { GoLock } from "react-icons/go";
 import { MdFamilyRestroom, MdOutlineLocalPhone, MdOutlineMail } from "react-icons/md";

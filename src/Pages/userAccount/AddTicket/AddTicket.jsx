@@ -1,5 +1,5 @@
 import {  useState } from "react";
-import UserPanelTitle from "../../../Components/UserPanelTitle/UserPanelTitle";
+import UserPanelTitle from "../../../Components/Templates/UserPanel/UserPanelTitle/UserPanelTitle";
 import { FaChevronDown } from "react-icons/fa";
 import { BsUpload } from "react-icons/bs";
 export default function AddTicket() {

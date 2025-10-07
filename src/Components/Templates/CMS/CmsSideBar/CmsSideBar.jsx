@@ -7,7 +7,7 @@ import { PiArticleNyTimes } from "react-icons/pi";
 import { LuUsers } from "react-icons/lu";
 import { HiMiniArrowRightStartOnRectangle } from "react-icons/hi2";
 import { VscCommentDiscussion } from "react-icons/vsc";
-import Context from "../../../Context/Context";
+import Context from "../../../../Context/Context";
 
 export default function CmsSideBar({ isCmsSideBar, setIsCmsSideBar }) {
   let bodyShadow = useRef(null)

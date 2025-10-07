@@ -1,4 +1,4 @@
-import DataTable from "../../../Components/CMS/DataTable/DataTable"
+import DataTable from "../../../Components/Templates/CMS/DataTable/DataTable"
 
 export default function Tickets() {
     

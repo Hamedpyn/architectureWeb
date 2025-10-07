@@ -6,7 +6,7 @@ import { HiMiniArrowRightStartOnRectangle } from "react-icons/hi2";
 import { PiGraduationCap, PiSquaresFour } from "react-icons/pi";
 import { VscCommentDiscussion } from "react-icons/vsc";
 import { RiQuestionLine } from "react-icons/ri"; import { FiEdit } from "react-icons/fi";
-import Context from "../../Context/Context";
+import Context from "../../../../Context/Context";
 
 export default function UserPanelSideBar({ isCmsSideBar, setIsCmsSideBar }) {
     let bodyShadow = useRef(null)

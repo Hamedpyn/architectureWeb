@@ -1,5 +1,5 @@
 import { useState } from "react";
-import UserPanelTitle from "../../../Components/UserPanelTitle/UserPanelTitle";
+import UserPanelTitle from "../../../Components/Templates/UserPanel/UserPanelTitle/UserPanelTitle";
 import { GoLock } from "react-icons/go";
 import { FaRegCircleUser } from "react-icons/fa6";
 import { IoMailOutline } from "react-icons/io5";

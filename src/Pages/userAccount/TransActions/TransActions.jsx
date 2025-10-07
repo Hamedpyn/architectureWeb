@@ -1,4 +1,4 @@
-import UserPanelTitle from "../../../Components/UserPanelTitle/UserPanelTitle";
+import UserPanelTitle from "../../../Components/Templates/UserPanel/UserPanelTitle/UserPanelTitle";
 import { Link } from "react-router-dom";
 
 export default function TransActions() {

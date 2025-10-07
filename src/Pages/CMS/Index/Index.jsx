@@ -3,7 +3,7 @@ import { FcSalesPerformance } from "react-icons/fc";
 import { GiExpense } from "react-icons/gi";
 import { FaSortAmountUp } from "react-icons/fa";
 import { ImSortAmountDesc } from "react-icons/im";
-import DataTable from "../../../Components/CMS/DataTable/DataTable";
+import DataTable from "../../../Components/Templates/CMS/DataTable/DataTable";
 
 export default function Index() {
 

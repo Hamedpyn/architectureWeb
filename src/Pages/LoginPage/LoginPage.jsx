@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Login from "../../Components/Login/Login";
+import Login from "../../Components/Templates/Login/Login";
 import Footer from "../../Components/Modules/Footer/Footer";
 import Header from "../../Components/Modules/Header/Header";
 
